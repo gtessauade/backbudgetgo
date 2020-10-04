@@ -31,10 +31,10 @@ exports.createInversiones = async (req, res) => {
       return res.status(400).json({ errores: errores.array() });
     }
 
-    const { user, id } = req.body;
+    const { user, id_inversion } = req.body;
 
     
-    const inversiones = await Inversiones.findOne({ user, id });
+    const inversiones = await Inversiones.findOne({ user, id_inversion });
     if (inversiones) {
        
       // ya existe, actualiza

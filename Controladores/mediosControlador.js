@@ -31,10 +31,10 @@ exports.createMedios = async (req, res) => {
       return res.status(400).json({ errores: errores.array() });
     }
 
-    const { user, id } = req.body;
+    const { user, id_medio } = req.body;
 
     
-    const medios = await Medios.findOne({ user, id });
+    const medios = await Medios.findOne({ user, id_medio });
     if (medios) {
        
       // ya existe, actualiza

@@ -46,7 +46,7 @@ const inversionesSchema = mongoose.Schema({
     type: String,
     require: true,
   },
-  id: {
+  id_inversion: {
      //type: mongoose.Schema.Types.ObjectId,
     type: Number,
      //createIndexes: true,

@@ -31,10 +31,10 @@ exports.createUsuarios = async (req, res) => {
       return res.status(400).json({ errores: errores.array() });
     }
 
-    const { user, id } = req.body;
+    const { user, id_usuario } = req.body;
 
     
-    const usuarios = await Usuarios.findOne({ user, id });
+    const usuarios = await Usuarios.findOne({ user, id_usuario });
     if (usuarios) {
        
       // ya existe, actualiza

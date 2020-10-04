@@ -46,7 +46,7 @@ const movimientosSchema = mongoose.Schema({
     type: String,
     require: true,
   },
-  id: {
+  id_movimiento: {
      //type: mongoose.Schema.Types.ObjectId,
     type: Number,
      //createIndexes: true,

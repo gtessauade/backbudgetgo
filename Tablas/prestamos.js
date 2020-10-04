@@ -42,7 +42,7 @@ const prestamosSchema = mongoose.Schema({
     type: String,
     require: true,
   },
-  id: {
+  id_prestamo: {
      //type: mongoose.Schema.Types.ObjectId,
     type: Number,
      //createIndexes: true,

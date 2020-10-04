@@ -10,7 +10,7 @@ const usuariosSchema = mongoose.Schema({
     type: String,
     require: true,
   },
-  id: {
+  id_usuario: {
      //type: mongoose.Schema.Types.ObjectId,
     type: Number,
      //createIndexes: true,

@@ -70,7 +70,7 @@ const mediosSchema = mongoose.Schema({
     type: String,
     require: true,
   },
-  id: {
+  id_medio: {
      //type: mongoose.Schema.Types.ObjectId,
     type: Number,
      //createIndexes: true,

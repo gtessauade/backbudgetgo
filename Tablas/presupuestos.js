@@ -26,7 +26,7 @@ const presupuestosSchema = mongoose.Schema({
     type: String,
     require: true,
   },
-  id: {
+  id_presupuestos: {
      //type: mongoose.Schema.Types.ObjectId,
     type: Number,
      //createIndexes: true,

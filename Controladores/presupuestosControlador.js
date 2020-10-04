@@ -31,10 +31,10 @@ exports.createPresupuestos = async (req, res) => {
       return res.status(400).json({ errores: errores.array() });
     }
 
-    const { user, id } = req.body;
+    const { user, id_presupuestos } = req.body;
 
     
-    const presupuestos = await Presupuestos.findOne({ user, id });
+    const presupuestos = await Presupuestos.findOne({ user, id_presupuestos });
     if (presupuestos) {
        
       // ya existe, actualiza

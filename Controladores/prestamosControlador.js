@@ -31,10 +31,10 @@ exports.createPrestamos = async (req, res) => {
       return res.status(400).json({ errores: errores.array() });
     }
 
-    const { user, id } = req.body;
+    const { user, id_prestamo } = req.body;
 
     
-    const prestamos = await Prestamos.findOne({ user, id });
+    const prestamos = await Prestamos.findOne({ user, id_prestamo });
     if (prestamos) {
        
       // ya existe, actualiza

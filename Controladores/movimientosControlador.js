@@ -1,5 +1,6 @@
 const Movimientos = require("../Tablas/movimientos");
 const { validationResult } = require("express-validator");
+const movimientos = require("../Tablas/movimientos");
 //const { createIncomeService } = require("../services/incomeService");
 
 // traigo movimientos
@@ -8,10 +9,9 @@ exports.getMovimientos = async (req, res) => {
   try {
     const { user } = req.params;
     if (user) {
-      movimientos = await Movimientos.find({ user: user }).sort({
-        //date: -1,
-      });
+      const movimientos = await Movimientos.find({ user: user });
       res.json({ movimientos });
+      console.log(movimientos);
     } else {
       return res.status(400).json({ msg: "No se ha indicado un usuario" });
     }
@@ -32,10 +32,10 @@ exports.createMovimientos = async (req, res) => {
       return res.status(400).json({ errores: errores.array() });
     }
 
-    const { user, id } = req.body;
+    const { user, id_movimiento } = req.body;
 
-    console.log("user",user,id,req.body);
-    const movimientos = await Movimientos.findOne({ user, id });
+    console.log("user",user,id_movimiento,req.body);
+    const movimientos = await Movimientos.findOne({ user, id_movimiento });
     if (movimientos) {
         console.log("existe");
       // ya existe, actualiza
