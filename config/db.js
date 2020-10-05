@@ -8,11 +8,11 @@ const conectarDB = async () => {
       useUnifiedTopology: true,
       useFindAndModify: false,
     });
-    console.log("Se conecto a la base");
+    console.log("Se conecto a la base de Budget GO");
   } catch (error) {
-    console.log("hubo un error en la conexion");
+    console.log("Hubo un error en la conexión a Budget GO");
     console.log(error);
-    process.exit(1); // Detener la app
+    process.exit(1); 
   }
 };
 

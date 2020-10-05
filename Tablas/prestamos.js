@@ -43,11 +43,7 @@ const prestamosSchema = mongoose.Schema({
     require: true,
   },
   id_prestamo: {
-     //type: mongoose.Schema.Types.ObjectId,
     type: Number,
-     //createIndexes: true,
-   // required: true,
-     //auto: true,
   },
 });
 

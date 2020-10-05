@@ -47,11 +47,7 @@ const movimientosSchema = mongoose.Schema({
     require: true,
   },
   id_movimiento: {
-     //type: mongoose.Schema.Types.ObjectId,
     type: Number,
-     //createIndexes: true,
-   // required: true,
-     //auto: true,
   },
 });
 

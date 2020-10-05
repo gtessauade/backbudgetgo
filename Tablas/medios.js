@@ -71,11 +71,7 @@ const mediosSchema = mongoose.Schema({
     require: true,
   },
   id_medio: {
-     //type: mongoose.Schema.Types.ObjectId,
     type: Number,
-     //createIndexes: true,
-   // required: true,
-     //auto: true,
   },
 });
 

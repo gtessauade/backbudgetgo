@@ -27,11 +27,7 @@ const presupuestosSchema = mongoose.Schema({
     require: true,
   },
   id_presupuestos: {
-     //type: mongoose.Schema.Types.ObjectId,
     type: Number,
-     //createIndexes: true,
-   // required: true,
-     //auto: true,
   },
 });
 

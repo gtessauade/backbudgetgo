@@ -11,11 +11,7 @@ const usuariosSchema = mongoose.Schema({
     require: true,
   },
   id_usuario: {
-     //type: mongoose.Schema.Types.ObjectId,
     type: Number,
-     //createIndexes: true,
-   // required: true,
-     //auto: true,
   },
 });
 
