@@ -5,9 +5,9 @@ const { validationResult } = require("express-validator");
 
 exports.getUsuarios = async (req, res) => {
   try {
-    const {user} = req.params;
-    if (user) {
-      usuarios = await Usuarios.find({ user:user}).sort({});
+    const {id_usuario} = req.params;
+    if (id_usuario) {
+      usuarios = await Usuarios.find({ id_usuario:id_usuario}).sort({});
       res.json({ usuarios });
     } else {
       return res.status(400).json({ msg: "No se ha indicado un usuario" });
